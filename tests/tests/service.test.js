@@ -1,7 +1,7 @@
 const { posts } = require('../service/service.js');
 
-describe("All my tests", ()=>{
-  it("call axios & not return nu" , async ()=>{
+describe("Test du service ", ()=>{
+  it("call axios & not return null" , async ()=>{
     let myPosts = await posts()
     const typeArr = typeof myPosts
     expect(myPosts).not.toBe(null);
